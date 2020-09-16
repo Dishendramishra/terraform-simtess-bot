@@ -1,6 +1,6 @@
 
 
-#### Creating terraform config file
+## Creating terraform config file
 
 **GCP service account key**: Terraform will access your GCP account by using a service account key. [Create one now](https://console.cloud.google.com/apis/credentials/serviceaccountkey) in the console. When creating the key, use the following settings:
 
@@ -21,7 +21,7 @@ You can check your project id in your gcp console.
 
 
 
-#### Create a local SSH key
+## Create a local SSH key
 
 ```shell-session
 ssh-keygen -t rsa -C "your_email@example.com" -f ./tf-cloud-init
@@ -29,13 +29,13 @@ ssh-keygen -t rsa -C "your_email@example.com" -f ./tf-cloud-init
 
 
 
-#### Add your public SSH key to your cloud-init script
+## Add your public SSH key to your cloud-init script
 
 open `scripts/add-ssh-web-app.yaml` and replace `ssh-rsa blah blah` with your ssh key created above.
 
 
 
-#### Deploying
+## Deploying
 
 To deploy simply run the `deploy.bat`
 
@@ -48,7 +48,7 @@ terraform apply plan
 
 #### 
 
-#### Destroying
+## Destroying
 
 To destroy simply run the `destroy.bat`
 
