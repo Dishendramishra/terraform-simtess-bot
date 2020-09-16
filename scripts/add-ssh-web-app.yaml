@@ -29,8 +29,9 @@ packages:
 
 # Setsthe GOPATH & downloads the demo payload
 runcmd:
+  - cd /home/dishendraprl
   - git clone https://github.com/Dishendramishra/simtess-bot
   - cd simtess-bot
-#   # - pip3 install -r requirements.txt
-#   # - python3 ./main.py &
+  - pip3 install -r requirements.txt
+
 # final_message: "The system is finally up, after $UPTIME seconds"
